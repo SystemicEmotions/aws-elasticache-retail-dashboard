@@ -7,7 +7,7 @@ import store from './store'
 
 // for our UI
 import Buefy from 'buefy'
-import 'buefy/lib/buefy.css'
+import 'buefy/dist/buefy.css'
 import 'font-awesome/css/font-awesome.min.css'
 
 // and websocket connection to backend
