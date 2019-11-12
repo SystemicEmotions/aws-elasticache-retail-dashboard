@@ -81,6 +81,8 @@ $ export ECR_DASHBOARD_REPO=$(aws cloudformation describe-stacks --stack-name el
 
 $ cd app
 $ docker build -t elasticache-dashboard .
+# the build might failed due to missing buefy module, if so please use npm install buefy --save-dev 
+
 $ docker tag elasticache-dashboard:latest $ECR_DASHBOARD_REPO:latest 
 $ docker push $ECR_DASHBOARD_REPO:latest
 
